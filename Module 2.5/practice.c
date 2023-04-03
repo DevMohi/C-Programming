@@ -38,21 +38,62 @@
 
 //Problem 3
 
+// #include<stdio.h>
+
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+
+//     if(n>=0){
+//         if(n%2==0){
+//             printf("Even");
+//         }
+//         else{
+//             printf("Odd");
+//         }
+//     }
+//     else{
+//         printf("Give a positive integer");
+//     }
+// }
+
+
+//Problem 4
+
+// #include<stdio.h>
+
+// int main(){
+//    int n;
+//    scanf("%d",&n);
+
+//    if(n>0){
+//     printf("positive");
+//    } 
+//    else if(n==0){
+//     printf("zero");
+//    }
+//    else{
+//     printf("negative");
+//    }
+// }
+
+
 #include<stdio.h>
 
 int main(){
     int n;
     scanf("%d",&n);
 
-    if(n>=0){
-        if(n%2==0){
-            printf("Even");
-        }
-        else{
-            printf("Odd");
+    if(n>=10000){
+        printf("Gucci Bag\n");
+        if(n>20000){
+            printf("Gucci Belt");
         }
     }
+    else if(n>=5000){
+        printf("Levis Bag");
+    }
     else{
-        printf("Give a positive integer");
+        printf("Something");
     }
 }
