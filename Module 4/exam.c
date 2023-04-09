@@ -9,7 +9,6 @@
 // }
 
 
-
 //Problem 2 - Multiply
 
 // #include<stdio.h>
@@ -17,15 +16,12 @@
 // int main(){
 //     long long int a,b;
 //     scanf("%lld %lld",&a,&b);
-
 //     long long int multiply = a*b;
 //     printf("%lld",multiply);
 // }
 
 
-
 //Problem 3 - Divisible
-
 // #include<stdio.h>
 
 // int main(){
@@ -44,7 +40,6 @@
 
 
 // Problem 4- Divisible 2 
-
 // #include<stdio.h>
 
 // int main(){
@@ -65,8 +60,6 @@
 //and you will buy a pair of shoes if you can buy punjabi.
 //Punjabi nile shoes nibo 
 //500 taka or more thakle shoes kinbo
-
-
 //you will punjabi if money>1000
 
 
