@@ -18,6 +18,8 @@ int main()
         if(k<mn){
             mn=k;
         }
+
+        //minus korse jeno value ta choto hoie jai
         n = n - mn;
         m = m - mn;
         k = k - mn;
