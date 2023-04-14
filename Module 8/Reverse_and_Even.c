@@ -14,6 +14,7 @@ int main(){
 
     //reversing and checking the evens
     for(int i=n-1; i>=0; i--){
+        //jodi even hoi print hobe ar naile hobena
         if(i%2==0){
             printf("%d ",ar[i]);
         }

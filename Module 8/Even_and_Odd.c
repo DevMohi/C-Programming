@@ -15,6 +15,7 @@ int main(){
         
         //jodi odd hoi
         if(j%2==1){
+            // taile odd sum er ste add hobe 
             odd_sum = odd_sum + j;
         }
     }

@@ -18,7 +18,9 @@ int main() {
     //aikane condition check korsi
     //replaced it with v
     for(int i=0; i<n;i++){
+        //jodi equal hoi index
         if(i==x){
+            //then replace it with v
             ar[i] = v;
         }
     }
