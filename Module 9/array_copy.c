@@ -20,9 +20,13 @@ int main(){
     for(int i=0; i<m; i++){
         scanf("%d",&b[i]);
     }
+
+
     //duita size mile [n+m] hobe ans hobe
     int ans[n+m];
 
+
+    //aikane first 5 ta value copy korse
     for(int i=0; i<n;i++){
         ans[i] = a[i];
     }
@@ -32,6 +36,8 @@ int main(){
     //taile ekn i barbe 5 theke and not 0
     int i= n;
 
+
+    //ai loop ta 0 theke 1 porjonto cholbe
     for(int j=0; j<m; j++){
         ans[i] = b[j];
         //aikane i er value barate hobe 

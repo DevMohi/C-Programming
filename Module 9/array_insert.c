@@ -73,7 +73,7 @@ int main(){
     //0 1 -> 1 + 1 = 2
     ar[pos] = val;
 
-    for(int i=0; i<=5; i++){
+    for(int i=0; i<=n; i++){
         printf("%d ",ar[i]);
     }
 

@@ -11,16 +11,25 @@ int main(){
         scanf("%d",&ar[i]);
     }
     int i=0, j=n-1; 
-    while(i<j){
-        //ar[i] er first value ta save kore
-        //tmp ta trpor ar [j] tah koro
-        int tmp = ar[i];
-        ar[i] = ar[j];
-        ar[j] = tmp; 
-        i++;
-        j--;
+    //easier
+    //My method
+    // for(int i=0,j=n-1; i<j; i++,j--){
+    //     int tmp = ar[i];
+    //     ar[i] = ar[j];
+    //     ar[j] = tmp; 
+    // }
 
-    }
+    //Pathan bhai method
+    // while(i<j){
+    //     //ar[i] er first value ta save kore
+    //     //tmp ta trpor ar [j] tah koro
+    //     int tmp = ar[i];
+    //     ar[i] = ar[j];
+    //     ar[j] = tmp; 
+    //     i++;
+    //     j--;
+
+    // }
 
     for(int i=0; i<n; i++){
         printf("%d ",ar[i]);
