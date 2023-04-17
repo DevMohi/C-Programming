@@ -23,6 +23,13 @@ int main(){
     for(int i=0; i<n-1; i++){
         printf("%d ",ar[i]);
     }
-
     return 0;
 }
+
+//aRRAY
+//5
+// 1 2 3 4 5
+// POS -1
+
+// aNS - 1 3 4 5
+
