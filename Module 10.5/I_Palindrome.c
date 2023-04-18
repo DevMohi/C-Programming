@@ -6,7 +6,6 @@ int main(){
     scanf("%s",&a);
 
     int ans=1;
-   
     // 0 1 2  5 4 3
     for(int i=0,j=strlen(a+1); i<j; i++,j--){
         if(a[i] != a[j]){
