@@ -122,29 +122,43 @@
 //     return 0;
 // }
 
-//D -> range sum
+//D -> range sum = Accepted
+//for l=3 and r = 6;
+//sum 1 finds 1 to 3 sum = 6 (1+2+3)
+//sum 2 finds 6  1 to 6 sum = 21 (1+2+3+4+5+6)
+//Here we can see we dont need from both of them
+// so 21-8 
 
 // #include<stdio.h>
 
 // int main(){
-//     long long int t;
-//     scanf("%lld",&t);
-//     long long int l,r;
+//     int t;
+//     scanf("%d",&t);
 
-//     for(int j=0; j<t; j++){
+//     for(int i=0; i<t;i++){
+//         long long int l,r;
 //         scanf("%lld %lld",&l,&r);
-//         long long int sum = 0;
-//         for(int i=l; i<=r; i++){
-//             sum = sum+ i;
+
+//     //finding 1 to l sum;
+
+//         long long int sum1 = (l) * (l+1)/2;
+//         long long int sum2 = (r) * (r+1)/2;
+
+//         long long int sum=0;
+//         if(l<r){
+//             sum = sum2 - sum1 + l;
 //         }
+//         else if(l>=r){
+//             sum = sum1 - sum2 + r;
+//         }
+
 //         printf("%lld\n",sum);
 //     }
-
 //     return 0;
 // }
 
 
-
+// D -> Counting elements  = Accepted
 // #include<stdio.h>
 
 // int main(){
@@ -158,35 +172,72 @@
 //     }
 
 //     int count = 0;
-
 //     for(int i=0; i<n; i++)
 //     {
 //         for(int j=0 ; j<n; j++){
-//             if(ar[j] + 1 == ar[i]){
+//             if(ar[j] == ar[i] +1){
 //                 count++;
+//                 break;
 //             }
 //         }
-//         // printf("\n"); 
 //     }
-//     printf("%d",count);
+//     printf("%d",count);  
 
 //     return 0;
 // }
 
 
 
-//F -> front-end
+//F -> Break Number = Accepted
 
 
-#include<stdio.h>
+// #include<stdio.h>
 
-int main(){
-    int x;
-    scanf("%d",&x);
+// int main(){
+//     long long int test;
+//     scanf("%lld",&test);
+   
+//     long long int x;
+//     long long int count = 0;
+//     long long int countNew = 0;
 
-    for(int i=0; i<5; i++){
-        
-    }
+//     for(int i=0;i<test; i++){
+//         count = 0;
+//         scanf("%lld",&x);
+//         while(x%2 ==0 ){
+//             x = x/2;
+//             count++;
+//         }
+//         if(count > countNew){
+//             countNew = count;
+//         }
+//     }
+//     printf("%lld",countNew);
 
-    return 0;
-}
+//     return 0;
+// }
+
+//Reversing
+
+// #include<stdio.h>
+
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     int ar[n];
+
+//     for(int i=0; i<n;i++){
+//         scanf("%d",&ar[i]);
+//     }
+//     for(int i=0; i<=n/2;i++){
+//         int temp = ar[0];
+//         ar[0]= ar[n/2]; 
+//         ar[n/2] =temp;
+
+//         printf("%d ",ar[i]);
+
+//     }
+//     return 0;
+// }
+
+
