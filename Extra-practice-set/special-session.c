@@ -146,4 +146,110 @@
 //         printf("%d ",ar[i]);
 //     }
 // }
-//comm
+
+
+
+//G- Even hate odd = accepted
+
+// #include<stdio.h>
+
+// int main(){
+//     int t;
+//     scanf("%d",&t);
+
+
+//     for(int i=0; i<t; i++){
+//         int n;
+//         scanf("%d",&n);
+//         int ar[n];
+
+//         for(int i=0; i<n;i++){
+//             scanf("%d",&ar[i]);
+//         }
+
+//         //odd even check
+
+//         int oddCount = 0;
+//         int evenCount = 0;
+//         for(int i=0; i<n;i++){
+
+//             if(ar[i] % 2 == 0){
+//                 evenCount++;
+//             }
+//             else{
+//                 oddCount++;
+//             }
+//         }
+
+//         if(n%2!=0){
+//             printf("-1\n");
+//         }
+//         else if(oddCount == evenCount){
+//             printf("0\n");
+//         }
+//         else{
+//             if(oddCount>evenCount){
+//                 int value = oddCount - (n/2);
+//                 printf("%d\n",value);
+//             }
+//             else{
+//                 int value = evenCount - (n/2);
+//                 printf("%d\n",value);
+//             }
+//         }
+//     }
+//     return 0;
+// }
+
+
+// F- front end   = accepted
+// #include <stdio.h>
+
+// int main()
+// {
+//     int a;
+//     scanf("%d", &a);
+//     int arr[a];
+//     for (int i = 0; i < a; i++)
+//     {
+//         scanf("%d", &arr[i]);
+//     }
+//     for (int i = 0, j = a - 1; i <= j; i++, j--)
+//     {
+//         if (i == j)
+//         {
+//             printf("%d ", arr[i]);
+//         }
+//         else
+//         {
+//             printf("%d %d ", arr[i], arr[j]);
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+
+// Sort string 
+#include<stdio.h>
+
+int main(){
+    int a;
+    scanf("%d",&a);
+
+    char c;
+    int cnt[26] = {0};
+    for(int i=0; i<a; i++){
+        scanf(" %c",&c); // Add a space before %c to consume the newline character
+        cnt[c-'a']++;
+    }
+    for(int i=0; i<26; i++){
+        while(cnt[i] != 0){
+            printf("%c",i+'a');
+            cnt[i]--;
+        }
+    }
+
+    return 0;
+}
